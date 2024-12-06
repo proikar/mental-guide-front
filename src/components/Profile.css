@@ -1,0 +1,163 @@
+/* Основной контейнер */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* Заголовок профиля */
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #4F8DA0;
+  }
+  
+  .profile-header h2 {
+    font-size: 24px;
+    color: #333333;
+    margin: 0;
+  }
+  
+  .profile-header p {
+    font-size: 16px;
+    color: #777777;
+  }
+  
+  /* Основной блок */
+  .profile-body {
+    margin-bottom: 20px;
+  }
+  
+  .profile-body h3 {
+    font-size: 18px;
+    color: #4F8DA0;
+    margin-bottom: 5px;
+  }
+  
+  .profile-body p {
+    font-size: 16px;
+    color: #333333;
+  }
+  
+  /* Инпуты для редактирования */
+  .profile-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .profile-input:focus {
+    border-color: #4F8DA0;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 141, 160, 0.5);
+  }
+  
+  /* Нижний блок */
+  .profile-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .profile-footer button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4F8DA0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .profile-footer button:hover {
+    background-color: #3a7180;
+  }
+  
+  .profile-footer button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Общий контейнер для страницы с боковой панелью */
+.profile-page-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Стили боковой панели */
+  .sidebar {
+    width: 14.28%;
+    background-color: #4F8DA0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar.closed {
+    width: 40px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 25px 0;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .text {
+    transition: opacity 0.3s ease;
+  }
+  
+  .sidebar.closed .text {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  
+  .menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  /* Основной контейнер профиля */
+  .profile-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
